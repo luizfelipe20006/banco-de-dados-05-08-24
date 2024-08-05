@@ -29,3 +29,93 @@ usuario_id int,
 foreign key(carro_id) references carros(id),
 foreign key(usuario_id) references usuarios(id)
 );
+
+select*from usuarios where nome like "%Pedro%";
+
+insert into usuarios set
+nome="Pedro Winski,",
+rg="11 222.333-44",
+cpf="077.124.44-40",
+status=1;
+
+insert into usuarios set
+nome="Reinaldo,",
+rg="44 454.545-18",
+cpf="545.871.121-75",
+status=1;
+
+insert into usuarios set
+nome="Luiz,",
+rg="11 454.544-81",
+cpf="727.181.741-15",
+status=1;
+
+insert into usuarios set
+nome="João Birer,",
+rg="45 419.171-91",
+cpf="121.147.184-47",
+status=1;
+
+insert into usuarios set
+nome="Ana,",
+rg="34 158.494-43",
+cpf="245.675.574-41",
+status=1;
+
+insert into usuarios set
+nome="Pedro Silca",
+rg="44 454.545-18",
+cpf="545.871.121-75",
+status=1;
+
+insert into carros set
+marca="fiat",
+modelo= "uno",
+ano="2006";
+
+insert into carros set
+marca="ferrari",
+modelo= "f40",
+ano="1987";
+
+insert into carros set
+marca="lamborgini",
+modelo= "urus",
+ano="2020";
+
+insert into carros set
+marca="bugati",
+modelo= "veyron",
+ano="2010";
+
+insert into carros set
+marca="pagani",
+modelo= "huayra",
+ano="2011";
+
+insert into carros set
+marca="alfa-romeo",
+modelo= "tonale", 
+ano="2021";
+
+insert into carros set
+marca="Tesla",
+modelo= "Cybertruck",
+ano="2024";
+
+insert into carros set
+marca="mclaren",
+modelo= "senna",
+ano="2020";
+
+insert into carros set
+marca="mercedes",
+modelo= "mg3",
+ano="2015";
+
+insert into carros set
+marca="mercedes",
+modelo= "amg gt",
+ano="2020";
+
+select*from carros;
