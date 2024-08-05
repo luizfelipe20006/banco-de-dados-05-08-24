@@ -1,0 +1,31 @@
+create database aula01;
+use aula01;
+create table aula01(
+id int auto_increment primary key,
+nome varchar(100),
+rg varchar(20),
+cpf varchar(20),
+status boolean
+);
+alter table aula01 rename usuarios;
+
+create table cargos(
+id int auto_increment primary key,
+nome varchar(100),
+salario decimal(7,2)
+);
+
+create table carros(
+id int auto_increment primary key,
+marca varchar(100),
+modelo varchar(100),
+ano year
+);
+
+create table usuarios_carros(
+id int auto_increment primary key,
+carro_id int,
+usuario_id int,
+foreign key(carro_id) references carros(id),
+foreign key(usuario_id) references usuarios(id)
+);
